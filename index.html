@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Event Registration Form</h1>
+        <p>Register for your favorite event!</p>
+
+        <form id="registrationForm">
+
+            <label>Full Name</label>
+            <input type="text" id="name"
+                   placeholder="Enter your name" required>
+
+            <label>Email Address</label>
+            <input type="email" id="email"
+                   placeholder="Enter your email" required>
+
+            <label>Phone Number</label>
+            <input type="tel" id="phone"
+                   placeholder="Enter phone number" required>
+
+            <label>Select Event</label>
+            <select id="event" required>
+                <option value="">Choose an event</option>
+                <option value="Tech Conference">Tech Conference</option>
+                <option value="Web Development Workshop">
+                    Web Development Workshop
+                </option>
+                <option value="AI Seminar">AI Seminar</option>
+                <option value="Coding Competition">
+                    Coding Competition
+                </option>
+            </select>
+
+            <button type="submit">Register Now</button>
+
+        </form>
+
+        <div id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
